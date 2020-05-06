@@ -1,0 +1,19 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .imoveis {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+  }
+  
+  .imoveis li {
+    margin: 1em;
+  }
+  
+  .imoveis li img {
+    width: 100%;
+  }
