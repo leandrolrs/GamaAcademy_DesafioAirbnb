@@ -21,13 +21,13 @@ function ajax_get(url, callback) {
 
 $(document).ready(function() {
 
-    ajax_get('https://api.sheety.co/30b6e400-9023-4a15-8e6c-16aa4e3b1e72', function (data) {
+    ajax_get('https://v2-api.sheety.co/b6ccb3ce22a7884310a835babb9eb39a/desafioAirbnb/desafioairbnb', function (data) {
         var html = "";
 
         var headerClass = "";
 
 
-        for (var i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.desafioairbnb.length; i++) {
             if (i == 0)
             {
                 headerClass = "carousel-item col-md-4 active";
@@ -39,11 +39,12 @@ $(document).ready(function() {
     
             html += "<div class=" + "'" + headerClass + "'" + ">" +
                 "<div class='card'>" +
-                  "<img class='card-img-top img-fluid' src=" + data[i]["photo"] + ">" +
+                  "<img class='card-img-top img-fluid' src=" + data.desafioairbnb[i]["photo"] + ">" +
                   "<div class='card-body'>" +
-                    "<h4 class='card-title'>"+ data[i]["property_type"] +"</h4>" +
-                    "<p class='card-text'>" + data[i]["name"] + "</p>" +
-                    "<p class='card-text'><small class='text-muted'>" + data[i]["price"] + "</small></p>" +
+                    "<h4 class='card-title'>"+ data.desafioairbnb[i]["propertyType"] +"</h4>" +
+                    "<p class='card-text'><small class='text-muted'>" + data.desafioairbnb[i]["location"] + "</small></p>" +
+                    "<p class='card-text'>" + data.desafioairbnb[i]["name"] + "</p>" +
+                    "<p class='card-text'><small class='text-muted'>R$ " + data.desafioairbnb[i]["price"] + "</small></p>" +
                   "</div>" +
                 "</div>" +
               "</div>";      
