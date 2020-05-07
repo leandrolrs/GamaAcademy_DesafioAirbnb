@@ -66,26 +66,12 @@
 	</div>
 </div>
 
-
-<script>
-	// Initialize and add the map
-	function initMap() {
-	  // The location of Uluru
-	  var uluru = {lat: -25.344, lng: 131.036};
-	  // The map, centered at Uluru
-	  var map = new google.maps.Map(
-		  document.getElementById('map'), {zoom: 4, center: uluru});
-	  // The marker, positioned at Uluru
-	  var marker = new google.maps.Marker({position: uluru, map: map});
-	}
-		</script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>   
 	<script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
 	<script src="https://npmcdn.com/bootstrap@4.0.0-alpha.5/dist/js/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_YouTWMCLRV7Hk4oEvnaRaifW1SHifE4"></script>
+    </script>
 	<script src="js/scripts.js"></script>
-	<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_YouTWMCLRV7Hk4oEvnaRaifW1SHifE4&callback=initMap">
-    </script>	
+
   </body>
 </html>
